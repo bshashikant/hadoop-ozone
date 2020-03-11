@@ -81,7 +81,7 @@ public class XceiverClientManager implements Closeable {
    * For security enabled ozone cluster, client should use the other constructor
    * with a valid ca certificate in pem string format.
    *
-   * @param conf configuration
+   * @param conf configuration  
    */
   public XceiverClientManager(Configuration conf) throws IOException {
     this(conf, OzoneConfiguration.of(conf).getObject(ScmClientConfig.class),
